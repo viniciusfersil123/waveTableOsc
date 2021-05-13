@@ -8,7 +8,7 @@ This library is still in develeopment, feel free to point out issues and suggest
 
 # Class waveTableOsc
 
-## Methods
+## Member Functions
 
 ### waveTableOsc (CONSTRUCTOR)
 Create and initializes a waveTableOsc instance

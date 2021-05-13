@@ -4,7 +4,7 @@ waveTableOsc is based on the wonderful articles by Nigel Redmon about the subjec
 
 Currently there are only one class, waveTableOsc, with two public member functions, including the constructor: waveTableOsc(int,int,cons char*,float) and phasor(double);
 
-This library is still in develeopment, feel free to point out issues and suggestions.
+This library is still under development, feel free to point out issues and suggestions.
 
 # Class waveTableOsc
 

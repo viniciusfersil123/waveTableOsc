@@ -6,6 +6,9 @@ Currently there are only one class, waveTableOsc, with two public member functio
 
 This library is still under development, feel free to point out issues and suggestions.
 
+# Brief explanation
+Wavetable synthesis is the technique of sequentially outputting sample values indexed in an array at a specific audio sample rate.
+
 # Class waveTableOsc
 
 ## Member Functions
@@ -38,3 +41,33 @@ phasor(double frequency);
 
   **int**
 
+
+# Installation
+
+Add the source files to your Arduino library folders and include the library with a #include "waveTableOsc.h" statement in the begging of your code.
+
+# Usage Example
+```
+// includes library
+#include "waveTableOsc.h"
+
+//creates variables for storing the parameters of waveTableOsc object to be created
+int waveSize = 512;
+int sampleRate = 44100;
+int amp = 8192;
+float freq;
+
+//creates a waveTableOsc type variable 
+waveTableOsc osc(waveSize, sampleRate, "saw", amp); //tableSize,SampleRate,Function(String),Amplitude);
+
+void setup() {
+//initialize frequency variable
+freq = 440;
+}
+
+void loop() {
+//this method should be called inside some kind of "render audio" function
+osc.phasor(freq);
+
+}
+```

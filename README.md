@@ -29,7 +29,7 @@ waveTableOsc(int table_size, int sample_rate, const char* function_select, float
 
   **void**
 
-### Phasosr
+### Phasor
 * Synthax <br>
 phasor(double frequency);
 
